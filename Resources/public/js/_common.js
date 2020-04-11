@@ -274,7 +274,7 @@ $(function() {
             else if(query.indexOf("notreplied/1") >= 0)
                 query = query.replace('notreplied/1','notreplied')
             else if(query.indexOf("mine/1") >= 0)
-                query = query.replace('mine/1','mine')
+                query = query.replace(/mine\/\d+/,'mine')
             else if(query.indexOf("starred/1") >= 0)
                 query = query.replace('starred/1','starred')
             else if(query.indexOf("trashed/1") >= 0)
